@@ -1,0 +1,10 @@
+import { build } from 'esbuild';
+import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+await build({ entryPoints: ['src/app.jsx'], outfile: 'public/app.js', bundle: true, minify: false, sourcemap: false, jsx: 'automatic', target: ['es2022'], legalComments: 'eof', define: { 'process.env.NODE_ENV': '"production"' } });
+const version = createHash('sha256').update(await readFile('public/app.js')).update(await readFile('public/app.css')).update(await readFile('public/style.css')).digest('hex').slice(0, 12);
+let componentStyleSeen = false;
+const html = (await readFile('public/index.html', 'utf8')).split('\n').filter(line => { if (!line.includes('href="/app.css')) return true; if (componentStyleSeen) return false; componentStyleSeen = true; return true; }).join('\n').replace(/\/app\.js(?:\?v=[a-f0-9]+)?/g, `/app.js?v=${version}`).replace(/\/app\.css(?:\?v=[a-f0-9]+)?/g, `/app.css?v=${version}`).replace(/\/style\.css(?:\?v=[a-f0-9]+)?/g, `/style.css?v=${version}`);
+await writeFile('public/index.html', html);
+console.log(`UI version ${version}`);
+console.log('Built Connect frontend → public/app.js + public/app.css');

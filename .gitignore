@@ -1,0 +1,54 @@
+.connect/
+output/
+node_modules/
+*.log
+public/app.js
+public/app.css
+
+# Local development, caches, and machine-specific state
+.cache/
+.tmp/
+tmp/
+coverage/
+test-results/
+playwright-report/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.impeccable/live/
+.vscode/
+.idea/
+*.tsbuildinfo
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Credentials and private configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+.npmrc
+
+# Private handoff / inspection artifacts; never part of a public release
+LIVE-CLAUDE-SECURITY-HANDOFF.md
+docs/vetting/
+docs/SHADCN-DEPENDENCY-REVIEW.md
+docs/DEPENDENCY-REVIEW.md
+
+# Release archives are generated locally, never checked in
+release/
+*.zip
+*.tgz
+
+# Local design-session context and generated build maps
+.impeccable/surfaces/
+public/*.map
+
+# Design tooling state is not required by application users
+.impeccable/

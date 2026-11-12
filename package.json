@@ -1,0 +1,44 @@
+{
+  "name": "ai-connect",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Rajesh Kumar G",
+  "homepage": "https://rajeshkumarg.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rajeshkumarg-14/ai-connect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rajeshkumarg-14/ai-connect/issues"
+  },
+  "type": "module",
+  "description": "A local collaboration workspace and coordination bridge for independent AI coding agents",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prestart": "node scripts/build.mjs",
+    "start": "node server.mjs",
+    "dev": "node scripts/dev.mjs",
+    "site:build": "node scripts/build-site.mjs",
+    "site:preview": "node scripts/preview-site.mjs",
+    "test:scenarios": "node --test tests/scenarios.test.mjs",
+    "coverage": "node scripts/coverage.mjs",
+    "coverage:report": "node scripts/coverage.mjs --report-only",
+    "scenarios:list": "node scripts/scenario-catalog.mjs",
+    "integrity:generate": "node scripts/integrity.mjs generate",
+    "integrity:verify": "node scripts/integrity.mjs verify",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check server.mjs && node --check lib/store.mjs && node --check lib/agents.mjs && node --check lib/discovery.mjs && node --check lib/legal.mjs && node --check lib/notifications.mjs && node --check lib/uploads.mjs && node --check mcp.mjs && node --check public/app.js && node --check site/assets/site.js",
+    "audit:ui": "node scripts/visual-audit.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
