@@ -36,7 +36,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "5fffcb22200b865cc2c3bf8831a71c2d1124cdeeca4ee812ae95920f7de0cb8c"
+      "sha256": "44cb01977381bf97abf673e9ff3ac627b38179ab3f6a4adca2c3a04383a527b0"
     },
     {
       "path": "SECURITY.md",
@@ -68,7 +68,7 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "ea4bd50ffc3fc58370a0fa795bb61401389820a151eb8e598b0ac757d22b9597"
+      "sha256": "ac0d1b2175ac0d7fa1cf45a374b1c1264f3ccd338ed3b7d70e2dedb3ed955e9f"
     },
     {
       "path": "docs/SECURITY-REVIEW.md",
@@ -160,7 +160,7 @@
     },
     {
       "path": "scripts/build-site.mjs",
-      "sha256": "2274992c66188aa63b4e2d604bf98daef4d29617447d2bbd2f36f7073a4722f5"
+      "sha256": "764a6e0ff3dca143a1d7632d2a724f5a99bbb41bc598e5ef5f3ac84a5f4c0b9a"
     },
     {
       "path": "scripts/build.mjs",
@@ -228,15 +228,15 @@
     },
     {
       "path": "site/contact.html",
-      "sha256": "4730eb1491edecbe8b91b50c5e9de4fae3d54b49b8f4a30af2035d49fdb6f7d8"
+      "sha256": "6b979b0eda632a4ee3af16251bf3db138c156523b6c47a7eeafa1474b7043a49"
     },
     {
       "path": "site/get-started.html",
-      "sha256": "7a42b8291d99b12f7fb38f15c2602f9ee86913a55cd6cc8f397a07c0a5431fd4"
+      "sha256": "e4074c78e15105aaf201b9e53c077dd67b30c18f449204b030b60911afe3a73f"
     },
     {
       "path": "site/index.html",
-      "sha256": "5609433095814558f158d9ffa7872026446525125c6a26274410ff78dd68779c"
+      "sha256": "f9c89a6494b3d2f7314a7b57254ddbe6d13856516844dbe97f198c16fca2a192"
     },
     {
       "path": "site/license.html",
@@ -244,7 +244,7 @@
     },
     {
       "path": "site/privacy.html",
-      "sha256": "ee894d99abc157c86611051f3e2f72e0fb978589ab6a166583d37404a391e862"
+      "sha256": "34ac74438652e3c0bedfed6bb62c919df93ee14f39d162c42eadc80fadae24dd"
     },
     {
       "path": "site/robots.txt",
@@ -252,7 +252,7 @@
     },
     {
       "path": "site/security.html",
-      "sha256": "b4c68c5566e8c6c04a0bc9bb4d3859cc4bd42b219976a4607bcd0af2185d3aa6"
+      "sha256": "849ad19bba0868eb16692fe539a97dea4f41b3592dc289d51865526100e1cace"
     },
     {
       "path": "site/terms.html",

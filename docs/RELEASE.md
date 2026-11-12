@@ -10,6 +10,14 @@ This checkout prepares source and a static website. Publication and GitHub Pages
 6. Retain the MIT license and third-party notices. Inspect provider integration claims: existing-session control is experimental, independent provider tools keep their permissions/network behavior, and checksums/tests are not a security guarantee.
 7. Review the remote and existing remote history before any later push. Do not force-push or publish a local development branch automatically.
 
-The future repository is `Rajeshkumarg-14/ai-connect`. The static `site/` tree is designed to work under a GitHub Pages project path using relative assets and links. Do not deploy the Node app to Pages; it needs a local Node process.
+The public repository is `Rajeshkumarg-14/ai-connect`. The static `site/` tree is designed to work under a GitHub Pages project path using relative assets and links. Do not deploy the Node app to Pages; it needs a local Node process.
 
 The backend line-coverage gate measures all nine backend runtime modules. Frontend behavior, static pages, and build tools have separate checks; the backend percentage must never be presented as repository-wide coverage.
+
+## GitHub Pages publication
+
+The landing site is published from the root of the `gh-pages` branch in the same repository. Only the contents of `site/` belong on that branch. The Node backend, local state, desktop payloads, credentials, and development artifacts are not site assets.
+
+After explicitly authorized site updates, build the site, commit an explicit source allowlist, then use `git subtree split --prefix=site HEAD` and push the returned commit to `origin gh-pages` without force. Configure GitHub Pages to use `gh-pages` and `/(root)`. Review remote history before pushing. Do not rewrite an existing Pages branch to resolve a rejected push.
+
+Public URL: https://rajeshkumarg-14.github.io/ai-connect/

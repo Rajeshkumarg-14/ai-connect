@@ -4,6 +4,8 @@ A local collaboration workspace and coordination bridge for independent AI codin
 
 Created by **Rajesh Kumar G** · [Website](https://rajeshkumarg.com) · [GitHub](https://github.com/Rajeshkumarg-14) · [FetchVolt](https://rajeshkumarg-14.github.io/fetchvolt-site/)
 
+Website: [rajeshkumarg-14.github.io/ai-connect](https://rajeshkumarg-14.github.io/ai-connect/) · [Report an issue](https://github.com/Rajeshkumarg-14/ai-connect/issues)
+
 ## Start locally
 
 Requires Node.js 22 or later. Windows 11 is the primary tested environment. Install and authenticate provider CLIs separately if you want managed agent runs.
@@ -80,4 +82,4 @@ SHA-256 manifests cover the allowlisted source, built app, site, tests, and publ
 
 ## License and contributions
 
-Original source and UI are [MIT licensed](LICENSE). Dependency notices are included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md); restricted components were removed. Contributions should include focused reproduction and validation evidence. See [contributing](CONTRIBUTING.md). Use the project’s GitHub issue page for ordinary reports after publication; report possible vulnerabilities privately as described in SECURITY.md and avoid sharing logs or conversations containing secrets.
+Original source and UI are [MIT licensed](LICENSE). Dependency notices are included in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md); restricted components were removed. Contributions should include focused reproduction and validation evidence. See [contributing](CONTRIBUTING.md). Use the project’s GitHub issue page for ordinary reports; report possible vulnerabilities privately as described in SECURITY.md and avoid sharing logs or conversations containing secrets.
